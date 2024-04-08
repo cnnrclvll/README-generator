@@ -7,10 +7,10 @@ function generateREADME(answers) {
     const projectLicense = answers.license;
     const badgeLicense = projectLicense.badge;
     const noticeLicense = `This project is licensed under the ${projectLicense.name}. ${projectLicense.description}`;
-    const badgeMarkdown = badgeLicense.replace('[![', '![').replace(')]', ')');
+    const badgeClean = badgeLicense.replace('[![', '![').replace(')]', ')');
 
     return `
-${badgeMarkdown}
+${badgeClean}
 
 # ${answers.title}
 
@@ -45,7 +45,7 @@ ${noticeLicense}
 If you have any questions, feel free to reach out:
 
 - GitHub: [${answers.github}](https://github.com/${answers.github})
-- Email: [${answers.email}](mailto:${answers.email})
+- Email: <a href="mailto:${answers.email}">${answers.email}</a>
 `;
 }
 
@@ -174,24 +174,12 @@ inquirer
         name: 'email',
     },
   ])
-  .then((answers) => {
-    const readmeContent = generateREADME(answers);
-    writeREADME(readmeContent);
+  .then((answers) => 
+    {
+        const readmeContent = generateREADME(answers);
+        writeREADME(readmeContent);
     })
-    .catch((error) => {
+    .catch((error) => 
+    {
         console.error(error);
     });
- // .then(console.log('success'));
-
-// TODO: Create an array of questions for user input
-/* const questions = [];
-
-// TODO: Create a function to write README file 
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
- */

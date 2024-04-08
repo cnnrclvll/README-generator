@@ -1,7 +1,7 @@
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)
 
-# e
+# g
 
 ## Table of Contents
 - [Description](#description)
@@ -28,10 +28,10 @@
 
 
 ## License
-This project is licensed under the MIT License. A permissive license that allows you to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software.
+This project is licensed under the Unlicense. A public domain dedication intended to release software into the public domain, waiving all copyright and related rights.
 
 ## Questions
 If you have any questions, feel free to reach out:
 
 - GitHub: [](https://github.com/)
-- Email: [](mailto:)
+- Email: <a href="mailto:cnnrclvll@gmail.com">cnnrclvll@gmail.com</a>
