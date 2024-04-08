@@ -1,12 +1,13 @@
-// TODO: Include packages needed for this application
+// packages
 const fs = require('fs');
 const inquirer = require('inquirer');
 
+// generate README file
 function generateREADME(answers) {
     console.log(answers.license);
     const projectLicense = answers.license;
     const badgeLicense = projectLicense.badge;
-    const noticeLicense = `This project is licensed under the ${projectLicense.name}. ${projectLicense.description}`;
+    const noticeLicense = `Licensing: ${projectLicense.name}. ${projectLicense.description}`;
     const badgeClean = badgeLicense.replace('[![', '![').replace(')]', ')');
 
     return `
@@ -49,7 +50,7 @@ If you have any questions, feel free to reach out:
 `;
 }
 
-// Function to write the README file
+// write README file
 function writeREADME(content) {
     fs.writeFile('README.md', content, (err) => {
         if (err) {
