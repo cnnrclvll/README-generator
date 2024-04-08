@@ -1,14 +1,21 @@
 {
-  "name": "static-site",
+  "name": "develop",
   "version": "1.0.0",
-  "description": "",
+  "description": "README generator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cnnrclvll/README-generator.git"
+  },
+  "author": "CC",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cnnrclvll/README-generator/issues"
+  },
+  "homepage": "https://github.com/cnnrclvll/README-generator#readme",
   "dependencies": {
-    "inquirer": "8.2.4"
+    "inquirer": "^8.2.4"
   }
 }
