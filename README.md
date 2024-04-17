@@ -21,6 +21,7 @@ The Professional Readme Generator is designed to save a developer time in creati
 To use the Readme Generator, copy the application directory locally. In your prefered terminal, navigate to the application directory. To begin creating your README.md, type the command 'node index.js'. User must have Node.js installed on their device to use this application.
 
 ## Usage
+[Link to Tutorial](https://app.screencastify.com/v3/watch/4IvAxJNFBr8UUg7UukFi)
 Use the command 'node index.js' in your terminal, against the application's directory. Respond to prompts regarding installation, usage, contributions, etc.  Your responses will populate the generated readme file.
 
 ## Contributing
